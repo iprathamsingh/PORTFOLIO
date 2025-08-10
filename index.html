@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evren Shah - Portfolio</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <!-- Main content container. The entire page scrolls -->
+    <div id="scroll-container">
+
+        <!-- iPad section which stays sticky at the top during the initial scroll -->
+        <div id="ipad-container-sticky">
+            <div id="ipad-container" class="ipad-container">
+                <div class="ipad-screen">
+                    <div class="ipad-camera"></div>
+                    <div class="portfolio-preview-content">
+                        <!-- Header with only the logo and resume button -->
+                        <div class="preview-header">
+                            <div class="flex items-center space-x-1">
+                                <svg class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="text-sm font-bold">PS</span>
+                            </div>
+                            
+                            <button class="preview-resume-btn">
+                                <span><a href="Data/RESUME .pdf">Resume <i class="fa-solid fa-download"></i></a></span>
+                                
+                            </button>
+                        </div>
+                        
+                        <!-- iPad Navigation Bar -->
+                        <div class="preview-nav">
+                            <a href="#about" class="active">About Me</a>
+                            <a href="#Skills">Skills</a>
+                            <a href="#projects">Project</a>
+                            <a href="#Experience">Experience</a>
+                            <a href="#contact">Contact Me</a>
+                        </div>
+                        
+                        <div class="preview-hero-text">
+                            <h2 class="text-white font-bold">
+                                Hello I'm Pratham Singh.<br>
+                                <strong class="text-blue-400">Data Enthusiast and Web Developer</strong><br>
+                            </h2>
+                            
+                            <div class="preview-social-icons">
+                            <a href="#" class="text-2xl"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-2xl"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-2xl"><i class="fab fa-instagram"></i></a>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="ipad-home-button"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full portfolio content starts after the sticky section -->
+        <div id="portfolio-full-content">
+            <!-- Header/Navigation - Only shows after iPad animation -->
+            <header class="header-nav py-4 px-8 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="text-lg font-bold">PS</span>
+                </div>
+                <nav class="space-x-8 hidden md:flex">
+                    <a href="#about" class="hover:text-blue-400">About Me</a>
+                    <a href="#Skills" class="hover:text-blue-400">Skills</a>
+                    <a href="#projects" class="hover:text-blue-400">Project</a>
+                    <a href="#Experience" class="hover:text-blue-400">Experience</a>
+                    <a href="#contact" class="hover:text-blue-400">Contact Me</a>
+                </nav>
+                <button class="flex items-center space-x-2 hover:bg-gray-700">
+                    <span><a href="Data/RESUME .pdf">Resume <i class="fa-solid fa-download"></i></a></span>
+                    
+                </button>
+            </header>
+
+            <div class="container mx-auto px-4 py-8">
+                <!-- Hero Section -->
+                <section id="about" class="hero-section flex flex-col md:flex-row items-center justify-between mt-20 md:mt-0">
+                    <div class="hero-text text-center md:text-left md:w-1/2">
+                        <h1 class="text-white font-bold mb-4">
+                            Hello I'm <br>Pratham Singh.<br>
+                            <strong class="text-blue-400">Data Enthusiast and Web Developer</strong><br>
+                        </h1>
+                        <p class="text-gray-400 mb-8">
+                                Welcome, I'm Pratham Singh— a dedicated developer passionate about transforming ideas into powerful digital solutions.
+                            My expertise bridges machine learning, and web technologies, where I excel at turning complex 
+                            concepts into intuitive applications that drive innovation across industries.                      </p>
+                        <div class="social-icons flex justify-center md:justify-start space-x-6">
+                            <a href="#" class="text-2xl"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-2xl"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-2xl"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+<!-- My Skills Section -->
+<section>
+<style>
+input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        background: #007bff;
+        border-radius: 50%;
+        margin-top: -6px; /* Center the thumb on the track */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+    .modal {
+        display: none;
+    }
+</style>
+
+<body id="Skills" class="bg-black text-gray-200 p-8">
+    <div class="container mx-auto p-4 md:p-8">
+        <!-- Main Heading with Blue Text -->
+         
+        <h1 id="Skills" class="text-3xl md:text-5xl font-bold text-center mb-12 blue-500-hex">Skills</h1>
+
+        <!-- Container for the three main boxes -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Box 1: Programming Languages -->
+            <div class="bg-gray-900 rounded-2xl shadow-xl p-6 transition-transform transform hover:scale-105 hover:shadow-2xl">
+                <div class="flex items-center justify-center mb-6">
+                    <!-- Icon for Programming Languages with a circular background -->
+                    <div class="bg-blue-500-hex bg-opacity-20 rounded-full p-2 mr-4">
+                        <svg class="h-8 w-8 blue-500-hex" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-semibold">Programming Languages</h2>
+                </div>
+                <div class="grid grid-cols-2 gap-6 p-4">
+                    <!-- Python -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Python', 'Data/Python.png', 80, 'Used in web development, data science, and machine learning.')">
+                        <img src="Data/Python.png" alt="Python Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- C++ -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('C++', 'Data/c++.png', 70, 'Mainly used for system programming, game development, and high-performance computing.')">
+                        <img src="Data/c++.png" alt="C++ Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- R Programming -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('R Programming', 'Data/R.png', 65, 'A primary language for statistical computing and graphics.')">
+                        <img src="Data/R.png" alt="R Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- SQL -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('SQL', 'Data/sql.jpg', 90, 'Used for managing and querying relational databases.')">
+                        <img src="Data/sql.jpg" alt="SQL Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- HTML -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('HTML', 'Data/HTML.jpg', 95, 'The standard markup language for creating web pages.')">
+                        <img src="Data/HTML.jpg" alt="HTML Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- CSS -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('CSS', 'Data/CSS.png', 90, 'Used for styling the presentation of a web page.')">
+                        <img src="Data/CSS.png" alt="CSS Logo" class="h-16 w-35 mb-2">
+                    </div>
+                    <!-- Javascript -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Javascript', 'Data/js.png', 85, 'Makes web pages interactive and dynamic.')">
+                        <img src="Data/js.png" alt="Javascript Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- Tailwind -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Tailwind', 'Data/tailwind.png', 95, 'A utility-first CSS framework for building custom designs.')">
+                        <img src="Data/tailwind.png" alt="Tailwind CSS Logo" class="h-20 w-16 mb-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 2: Frameworks & Libraries -->
+            <div class="bg-gray-900 rounded-2xl shadow-xl p-6 transition-transform transform hover:scale-105 hover:shadow-2xl">
+                <div class="flex items-center justify-center mb-6">
+                    <!-- Icon for Frameworks with a circular background -->
+                    <div class="bg-blue-500-hex bg-opacity-20 rounded-full p-2 mr-4">
+                        <svg class="h-8 w-8 blue-500-hex" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h2a2 2 0 012 2v2m0 10a2 2 0 012-2h2a2 2 0 012 2v2m-6-6h6m-3 0V9a2 2 0 012-2h2a2 2 0 012 2v2m-6 6a2 2 0 01-2-2v-2a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2z"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-semibold">Frameworks & Libraries</h2>
+                </div>
+                <div class="grid grid-cols-2 gap-6 p-4">
+                    <!-- NumPy -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Numpy', 'Data/numpy.png', 75, 'A fundamental library for scientific computing with Python.')">
+                        <img src="Data/numpy.png" alt="Numpy Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- Scikit-Learn -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Scikit-Learn', 'Data/Scikit_learn.png', 80, 'A machine learning library for Python.')">
+                        <img src="Data/Scikit_learn.png" alt="Scikit-Learn Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- TensorFlow -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Tensorflow', 'Data/TensorFlow_logo.png', 60, 'An open-source library for machine learning and artificial intelligence.')">
+                        <img src="Data/TensorFlow_logo.png" alt="Tensorflow Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- Pandas -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Pandas', 'https://placehold.co/128x128/000000/FFFFFF?text=Pandas', 85, 'Used for data manipulation and analysis in Python.')">
+                        <img src="https://placehold.co/128x128/000000/FFFFFF?text=Pandas" alt="Pandas Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- Matplotlib -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Matplotlib', 'https://placehold.co/128x128/000000/FFFFFF?text=Matplotlib', 80, 'A plotting library for creating static, animated, and interactive visualizations.')">
+                        <img src="https://placehold.co/128x128/000000/FFFFFF?text=Matplotlib" alt="Matplotlib Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- SciPy -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('SciPy', 'https://placehold.co/128x128/000000/FFFFFF?text=SciPy', 60, 'A scientific computing library used for optimization, integration, and other scientific tasks.')">
+                        <img src="https://placehold.co/128x128/000000/FFFFFF?text=SciPy" alt="SciPy Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- OpenCV -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Open CV', 'https://placehold.co/128x128/000000/FFFFFF?text=OpenCV', 65, 'An open-source computer vision and machine learning software library.')">
+                        <img src="https://placehold.co/128x128/000000/FFFFFF?text=OpenCV" alt="OpenCV Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- Mediapipe -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Mediapipe', 'https://placehold.co/128x128/000000/FFFFFF?text=Mediapipe', 50, 'A framework for building cross-platform machine learning pipelines.')">
+                        <img src="https://placehold.co/128x128/000000/FFFFFF?text=Mediapipe" alt="Mediapipe Logo" class="h-16 w-16 mb-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 3: Tools -->
+            <div class="bg-gray-900 rounded-2xl shadow-xl p-6 transition-transform transform hover:scale-105 hover:shadow-2xl">
+                <div class="flex items-center justify-center mb-6">
+                    <!-- Icon for Tools with a circular background -->
+                    <div class="bg-blue-500-hex bg-opacity-20 rounded-full p-2 mr-4">
+                        <svg class="h-8 w-8 blue-500-hex" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-semibold">Tools</h2>
+                </div>
+                <div class="grid grid-cols-2 gap-6 p-4">
+                    <!-- GitHub -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Github', 'https://placehold.co/128x128/000000/FFFFFF?text=Github', 95, 'A platform for version control and collaboration on software projects.')">
+                        <img src="Data/GitHub-logo.jpg" alt="Github Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- VS Code -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Vs Code', 'https://placehold.co/128x128/000000/FFFFFF?text=VS+Code', 95, 'A popular code editor developed by Microsoft.')">
+                        <img src="Data/Visual_Studio.png" alt="VS Code Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- Figma -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Figma', 'https://placehold.co/128x128/000000/FFFFFF?text=Figma', 80, 'A collaborative web-based editor for user interface design.')">
+                        <img src="Data/figma.jpg" alt="Figma Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- Jupyter -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('Jupyter', 'https://placehold.co/128x128/000000/FFFFFF?text=Jupyter', 70, 'An open-source web application for creating and sharing documents with live code.')">
+                        <img src="Data/Jupyter_logo.svg.png" alt="Jupyter Logo" class="h-16 w-16 mb-2">
+                    </div>
+                    <!-- MySQL -->
+                    <div class="logo-card flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800 transition-all duration-300 cursor-pointer"
+                        onclick="showModal('MySQL', 'https://placehold.co/128x128/000000/FFFFFF?text=MySQL', 85, 'An open-source relational database management system.')">
+                        <img src="Data/sql.jpg" alt="MySQL Logo" class="h-16 w-16 mb-2">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- The Modal Structure -->
+    <div id="skill-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 transition-opacity duration-300">
+        <div class="bg-gray-900 rounded-2xl shadow-2xl p-8 max-w-lg w-full m-4 relative animate-fade-in-up">
+            <button class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors" onclick="hideModal()">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div class="flex flex-col items-center text-center">
+                <img id="modal-image" src="" alt="Skill Logo" class="h-20 w-20 mb-4 rounded-full border-4 border-blue-500-hex">
+                <h3 id="modal-title" class="text-3xl font-bold mb-4 blue-500-hex"></h3>
+                <div class="w-full mb-4">
+                    <input id="modal-slider" type="range" min="0" max="100" value="0" class="w-full accent-blue-500-hex cursor-not-allowed" disabled>
+                    <span id="modal-value" class="text-lg">0%</span>
+                </div>
+                <p id="modal-description" class="text-sm text-gray-400"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <!-- Projects Section -->
+                <section id="projects" class="mb-16">
+                    <h2 class="section-heading">Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- EDIT POINT 2: Replace video sources and project details -->
+                        <div class="project-card">
+                            <div class="project-video">
+                                <!-- REPLACE: Add your project video here -->
+                                <video autoplay muted loop>
+                                    <source src="project1-demo.mp4" type="video/mp4">
+                                    <!-- Fallback for no video -->
+                                    <div class="flex items-center justify-center h-full bg-gray-800">
+                                        <span class="text-gray-400">Project Video</span>
+                                    </div>
+                                </video>
+                            </div>
+                            <div class="project-content">
+                                <h3>Hand gesture-Tab changer</h3>
+                                <p class="text-gray-400 mb-3">Hand Gesture Tab Changer is a machine learning powered project for automated tab 
+                                    control, enabling users to switch browser tabsseamlessly through intuitive hand gestures.</p>
+                                <div class="flex flex-wrap gap-2 mb-3">
+                                    <span class="bg-blue-600 text-xs px-2 py-1 rounded">Python</span>
+                                    <span class="bg-green-600 text-xs px-2 py-1 rounded">MediaPipe</span>
+                                    <span class="bg-purple-600 text-xs px-2 py-1 rounded">OpenCV</span>
+                                </div>
+                                <a href="#" class="text-blue-400 hover:underline">View Project →</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-video">
+                                <video autoplay muted loop>
+                                    <source src="project2-demo.mp4" type="video/mp4">
+                                    <div class="flex items-center justify-center h-full bg-gray-800">
+                                        <span class="text-gray-400">Project Video</span>
+                                    </div>
+                                </video>
+                            </div>
+                            <div class="project-content">
+                                <h3>Task Management App</h3>
+                                <p class="text-gray-400 mb-3">A collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface.</p>
+                                <div class="flex flex-wrap gap-2 mb-3">
+                                    <span class="bg-cyan-600 text-xs px-2 py-1 rounded">Vue.js</span>
+                                    <span class="bg-orange-600 text-xs px-2 py-1 rounded">Firebase</span>
+                                    <span class="bg-red-600 text-xs px-2 py-1 rounded">Tailwind</span>
+                                </div>
+                                <a href="#" class="text-blue-400 hover:underline">View Project →</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-video">
+                                <video autoplay muted loop>
+                                    <source src="project3-demo.mp4" type="video/mp4">
+                                    <div class="flex items-center justify-center h-full bg-gray-800">
+                                        <span class="text-gray-400">Project Video</span>
+                                    </div>
+                                </video>
+                            </div>
+                            <div class="project-content">
+                                <h3>Portfolio Website</h3>
+                                <p class="text-gray-400 mb-3">A responsive portfolio website with modern animations, dark theme, and interactive elements showcasing my work and skills.</p>
+                                <div class="flex flex-wrap gap-2 mb-3">
+                                    <span class="bg-yellow-600 text-xs px-2 py-1 rounded">HTML5</span>
+                                    <span class="bg-blue-600 text-xs px-2 py-1 rounded">CSS3</span>
+                                    <span class="bg-yellow-500 text-xs px-2 py-1 rounded">JavaScript</span>
+                                </div>
+                                <a href="#" class="text-blue-400 hover:underline">View Project →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more-button-container mt-8 text-center">
+                         <a href="your_destination_url" target="_blank" class="show-more-button">
+                                Show More
+                         </a>
+                    </div>
+                </section>
+
+                <!-- Achievements Section -->
+                <section id="achievements" class="mb-16">
+                    <h2 class="section-heading">Achievements & Certificates</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- EDIT POINT 3: Add your achievements and certificates -->
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-blue-400">Web Development Bootcamp</h3>
+                            <p class="text-gray-400 mb-2">Completed comprehensive full-stack development course</p>
+                            <p class="text-sm text-gray-500">2024 • Udemy</p>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-blue-400">React Developer Certificate</h3>
+                            <p class="text-gray-400 mb-2">Advanced React.js development certification</p>
+                            <p class="text-sm text-gray-500">2024 • Meta</p>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-blue-400">JavaScript Algorithms</h3>
+                            <p class="text-gray-400 mb-2">Data Structures and Algorithms certification</p>
+                            <p class="text-sm text-gray-500">2023 • FreeCodeCamp</p>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-blue-400">UI/UX Design Fundamentals</h3>
+                            <p class="text-gray-400 mb-2">User interface and experience design principles</p>
+                            <p class="text-sm text-gray-500">2023 • Coursera</p>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-blue-400">Python Programming</h3>
+                            <p class="text-gray-400 mb-2">Advanced Python development and automation</p>
+                            <p class="text-sm text-gray-500">2023 • Python Institute</p>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-blue-400">AWS Cloud Practitioner</h3>
+                            <p class="text-gray-400 mb-2">Amazon Web Services cloud fundamentals</p>
+                            <p class="text-sm text-gray-500">2024 • Amazon</p>
+                        </div>
+                    </div>
+                </section>
+
+                   <section class="Experience" id="Experience">
+        <h2 class="title-section">EXPERIENCE</h2>
+        <div class="timeline">
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <h3>Senior Frontend Developer</h3>
+                    <p>Led a team of 5 developers in creating responsive web applications for Fortune 500 companies.</p>
+                </div>
+                <div class="timeline-date">2024</div>
+            </div>
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <h3>Hackathon Winner</h3>
+                    <p>First place in National Developer Challenge for innovative AI-powered solution.</p>
+                </div>
+                <div class="timeline-date">2023</div>
+            </div>
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <h3>Full Stack Developer</h3>
+                    <p>Developed and maintained multiple web applications serving over 100k users.</p>
+                </div>
+                <div class="timeline-date">2022</div>
+            </div>
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <h3>Junior Developer</h3>
+                    <p>Started my professional journey building responsive websites and learning modern frameworks.</p>
+                </div>
+                <div class="timeline-date">2021</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+                <section id="about-me" class="mb-16">
+                    <h2 class="section-heading">About Me</h2>
+                    <div class="max-w-4xl mx-auto">
+                        <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <!-- EDIT POINT 4: Replace with your photo -->
+                                    <div class="w-64 h-64 mx-auto bg-gray-700 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-user text-6xl text-gray-500"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Frontend Developer & UI/UX Enthusiast</h3>
+                                    <!-- EDIT POINT 5: Replace with your personal information -->
+                                    <p class="text-gray-300 mb-4">
+                                        I'm a passionate frontend developer based in India with over 2 years of experience in creating beautiful, functional, and user-friendly web applications. I specialize in modern JavaScript frameworks and have a keen eye for design.
+                                    </p>
+                                    <p class="text-gray-300 mb-4">
+                                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through technical blogs. I believe in continuous learning and staying updated with the latest trends in web development.
+                                    </p>
+                                    <div class="grid grid-cols-2 gap-4 mt-6">
+                                        <div>
+                                            <h4 class="font-semibold text-blue-400">Location</h4>
+                                            <p class="text-gray-300">India</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-blue-400">Experience</h4>
+                                            <p class="text-gray-300">2+ Years</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-blue-400">Email</h4>
+                                            <p class="text-gray-300">evren@example.com</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-blue-400">Phone</h4>
+                                            <p class="text-gray-300">+91 XXXXX XXXXX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Me Section -->
+                <section id="contact" class="mb-16">
+                    <h2 class="section-heading">Contact Me</h2>
+                    <div class="max-w-4xl mx-auto">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Contact Information -->
+                            <div class="bg-gray-900 rounded-lg p-8">
+                                <h3 class="text-2xl font-bold mb-6 text-blue-400">Get in Touch</h3>
+                                <div class="space-y-4">
+                                    <!-- EDIT POINT 6: Update your contact information -->
+                                    <div class="flex items-center space-x-4">
+                                        <i class="fas fa-envelope text-blue-400 text-xl"></i>
+                                        <div>
+                                            <h4 class="font-semibold">Email</h4>
+                                            <p class="text-gray-300">evren.shah@example.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <i class="fas fa-phone text-blue-400 text-xl"></i>
+                                        <div>
+                                            <h4 class="font-semibold">Phone</h4>
+                                            <p class="text-gray-300">+91 XXXXX XXXXX</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <i class="fas fa-map-marker-alt text-blue-400 text-xl"></i>
+                                        <div>
+                                            <h4 class="font-semibold">Location</h4>
+                                            <p class="text-gray-300">India</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-8">
+                                    <h4 class="font-semibold mb-4 text-blue-400">Follow Me</h4>
+                                    <div class="flex space-x-4">
+                                        <!-- EDIT POINT 7: Update your social media links -->
+                                        <a href="#" class="text-2xl text-gray-400 hover:text-blue-400 transition-colors">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                        <a href="#" class="text-2xl text-gray-400 hover:text-blue-400 transition-colors">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="#" class="text-2xl text-gray-400 hover:text-blue-400 transition-colors">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" class="text-2xl text-gray-400 hover:text-blue-400 transition-colors">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Contact Form -->
+                            <div class="contact-form">
+                                <h3 class="text-2xl font-bold mb-6 text-blue-400">Send Message</h3>
+                                <form id="contact-form">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" id="subject" name="subject" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-btn">
+                                        <i class="fas fa-paper-plane mr-2"></i>
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container mx-auto px-4">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h3>Evren Shah</h3>
+                            <p class="text-gray-400">Frontend Developer passionate about creating amazing web experiences.</p>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Quick Links</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#about">About</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Services</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">UI/UX Design</a></li>
+                                <li><a href="#">Frontend Development</a></li>
+                                <li><a href="#">Responsive Design</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Connect</h3>
+                            <div class="flex space-x-4 mt-2">
+                                <!-- EDIT POINT 8: Update footer social links -->
+                                <a href="#" class="text-xl"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-xl"><i class="fab fa-github"></i></a>
+                                <a href="#" class="text-xl"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-xl"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Evren Shah. All rights reserved. Made with ❤️ in India</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Get references to the HTML elements
+        const scrollContainer = document.getElementById('scroll-container');
+        const ipadContainer = document.getElementById('ipad-container');
+        const fullContent = document.getElementById('portfolio-full-content');
+        const headerNav = document.querySelector('.header-nav');
+        
+        // Define the scroll range for the animation
+        const ANIMATION_RANGE_START = 0;
+        const ANIMATION_RANGE_END = window.innerHeight; // Animation completes after 1 full viewport height of scrolling
+        
+        /**
+         * Handles the scroll event to animate the iPad and reveal the portfolio.
+         */
+        function handleScroll() {
+            const scrollTop = window.scrollY;
+            
+            // Calculate animation progress (0 to 1) based on scroll position within the defined range
+            let progress = Math.min(1, Math.max(0, (scrollTop - ANIMATION_RANGE_START) / (ANIMATION_RANGE_END - ANIMATION_RANGE_START)));
+            
+            // Scale and fade the iPad container
+            const scale = 1 + progress * 1.5;
+            ipadContainer.style.transform = `scale(${scale})`;
+            ipadContainer.style.opacity = 1 - progress;
+            
+            // Show navigation bar after animation completes (when progress > 0.8)
+            if (progress > 0.8) {
+                headerNav.classList.add('visible');
+            } else {
+                headerNav.classList.remove('visible');
+            }
+        }
+
+        // Add the scroll event listener
+        window.addEventListener('scroll', handleScroll);
+        
+        // Initial call to set the initial state
+        handleScroll();
+
+        // iPad Navigation functionality
+        const previewNavLinks = document.querySelectorAll('.preview-nav a');
+        previewNavLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Remove active class from all links
+                previewNavLinks.forEach(l => l.classList.remove('active'));
+                
+                // Add active class to clicked link
+                link.classList.add('active');
+                
+                // Smooth scroll to target section (if needed)
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // --- Gemini API Integration for Project Description Generation ---
+
+        const generateButtons = document.querySelectorAll('.generate-description-btn');
+
+        generateButtons.forEach(button => {
+            button.addEventListener('click', async () => {
+                const projectCard = button.closest('.project-card');
+                const projectTitle = projectCard.dataset.projectTitle;
+                const projectDescriptionElement = projectCard.querySelector('.project-description');
+                const originalDescription = projectCard.dataset.originalDescription;
+
+                // Store original text and disable button
+                const originalButtonText = button.innerHTML;
+                button.innerHTML = '<div class="spinner"></div> Generating...';
+                button.disabled = true;
+
+                try {
+                    let chatHistory = [];
+                    const prompt = `Generate a more detailed and engaging description for a project titled "${projectTitle}". The current short description is: "${originalDescription}". Expand on its features, technologies used, and its impact, making it sound professional and appealing for a portfolio. Keep it concise, around 3-4 sentences.`;
+                    
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                    const payload = { contents: chatHistory };
+                    const apiKey = "";
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+                    // Implement exponential backoff for API calls
+                    const MAX_RETRIES = 3;
+                    let retries = 0;
+                    let response;
+
+                    while (retries < MAX_RETRIES) {
+                        try {
+                            response = await fetch(apiUrl, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify(payload)
+                            });
+
+                            if (response.status === 429) {
+                                const delay = Math.pow(2, retries) * 1000 + Math.random() * 1000;
+                                console.warn(`Rate limit hit. Retrying in ${delay / 1000}s...`);
+                                await new Promise(resolve => setTimeout(resolve, delay));
+                                retries++;
+                                continue;
+                            } else if (!response.ok) {
+                                throw new Error(`HTTP error! status: ${response.status}`);
+                            }
+                            break;
+                        } catch (error) {
+                            console.error("Fetch error:", error);
+                            if (retries === MAX_RETRIES - 1) throw error;
+                            const delay = Math.pow(2, retries) * 1000 + Math.random() * 1000;
+                            console.warn(`Error during fetch. Retrying in ${delay / 1000}s...`);
+                            await new Promise(resolve => setTimeout(resolve, delay));
+                            retries++;
+                        }
+                    }
+
+                    const result = await response.json();
+                    
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const generatedText = result.candidates[0].content.parts[0].text;
+                        projectDescriptionElement.textContent = generatedText;
+                    } else {
+                        projectDescriptionElement.textContent = "Failed to generate description. Please try again.";
+                        console.error("Gemini API response structure unexpected:", result);
+                    }
+                } catch (error) {
+                    console.error("Error generating description:", error);
+                    projectDescriptionElement.textContent = "Error generating description. Please check console for details.";
+                } finally {
+                    // Restore button state
+                    button.innerHTML = originalButtonText;
+                    button.disabled = false;
+                }
+            });
+        });
+        /**
+         * Shows the modal with the specified skill details.
+         * @param {string} title - The title of the skill.
+         * @param {string} imageUrl - The URL of the logo image.
+         * @param {number} proficiency - The proficiency level (0-100).
+         * @param {string} description - The one-line description of the skill.
+         */
+        function showModal(title, imageUrl, proficiency, description) {
+            const modal = document.getElementById('skill-modal');
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-image').src = imageUrl;
+            document.getElementById('modal-slider').value = proficiency;
+            document.getElementById('modal-value').innerText = `${proficiency}%`;
+            document.getElementById('modal-description').innerText = description;
+            
+            // Set the accent color of the slider dynamically
+            const slider = document.getElementById('modal-slider');
+            slider.style.accentColor = '#007bff';
+            document.getElementById('modal-image').style.borderColor = '#007bff';
+
+            modal.style.display = 'flex';
+        }
+
+        /**
+         * Hides the modal.
+         */
+        function hideModal() {
+            const modal = document.getElementById('skill-modal');
+            modal.style.display = 'none';
+        }
+
+        // Handle escape key to close modal
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                hideModal();
+            }
+        });
+
+        // Close the modal when clicking on the background (anywhere outside the content)
+        const modal = document.getElementById('skill-modal');
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                hideModal();
+            }
+        });
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
